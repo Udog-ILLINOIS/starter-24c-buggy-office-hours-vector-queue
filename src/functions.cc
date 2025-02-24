@@ -64,7 +64,7 @@ void HelpNextStudent(OfficeHoursQueue& queue) {
   Staff staff = queue.staff_queue[queue.staff_queue.size() - 1];
   staff.encounter_count++;
   staff.total_help_time += help_time;
-  AddStaff(queue, staff);
+  // AddStaff(queue, staff);
 
   std::cout << "Staff " << staff.name << " helped student " << student.name
             << " for " << help_time << " minutes.\n";
