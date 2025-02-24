@@ -51,7 +51,7 @@ void AddStaff(OfficeHoursQueue& queue, const Staff& staff) {
       queue.staff_queue[index] = temp;
       index--;
     } else if (current.encounter_count == previous.encounter_count) {
-      if (current.arrival_order < previous.arrival_order) {
+      if (current.total_help_time< previous.total_help_time) {
         Staff temp = queue.staff_queue[index - 1];
         queue.staff_queue[index - 1] = queue.staff_queue[index];
         queue.staff_queue[index] = temp;
